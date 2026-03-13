@@ -245,7 +245,6 @@ export default function App() {
     setPhase("loading"); setPrd(null); setErr("");
     try {
       // ── Claude API (paste your key from console.anthropic.com) ──
-     // const CLAUDE_KEY = "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"; // ← only change this
       const CLAUDE_KEY = import.meta.env.VITE_CLAUDE_API_KEY;
       const res = await fetch("https://api.anthropic.com/v1/messages", {
         method: "POST",
